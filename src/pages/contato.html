@@ -7,13 +7,16 @@
     <title>Educação para Todos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../css/style.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Educação para Todos</a>
+            <a class="navbar-brand" href="./../index.html">
+                <h1 class="font-15rem mb-0">Educação para Todos</h1>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
                 aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,9 +44,78 @@
         </div>
     </nav>
 
-    <main></main>
+    <main class="container mt-100px">
+        <section>
+            <h2 class="text-center">Contato</h2>
 
-    <footer></footer>
+            <p class="text-center">Fale conosco através do formulário</p>
+
+            <div class="mt-3">
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Nome</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Nome">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Email</label>
+                            <input type="email" class="form-control" id="lastName" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Assunto</label>
+                        <input type="text" class="form-control" id="email" placeholder="Assunto">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address">Mensagem</label>
+                        <textarea name="" class="form-control" cols="30" rows="4" placeholder="Mensagem"></textarea>
+                    </div>
+                    <button class="btn btn-primary btn-lg btn-block w-25 mx-auto" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <hr class="my-5">
+        <section>
+            <h2 class="text-center">Doação</h2>
+
+            <p class="text-center">Faça uma doação ao projeto</p>
+
+            <div class="my-3">
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Nome</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Nome">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Email</label>
+                            <input type="email" class="form-control" id="lastName" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">R$</span>
+                        </div>
+                        <input type="number" min="0" step="0.01" class="form-control"
+                            placeholder="Quantidade da doação">
+                    </div>
+
+                    <button class="btn btn-primary btn-lg btn-block w-25 mx-auto mt-5" type="submit">Doar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-dark pt-5">
+        <div class="container">
+            <hr>
+            <h6 class="text-center mt-4">Desenvolvido para a matéria de programação web da Fatec Carapicuíba</h6>
+            <h6 class="text-center mb-4">Luiz Felipe - Matheus Reis</h6>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
